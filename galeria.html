@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kicikici – Galeria</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body{
+    font-family:'Quicksand',sans-serif;
+    background:white;
+    margin:0;
+    padding:24px;
+}
+
+h1{color:#8338ec}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px;
+}
+
+img{
+    width:100%;
+    border-radius:18px;
+    transition:.3s;
+}
+
+img:hover{
+    transform:scale(1.08) rotate(1deg);
+}
+
+a{
+    color:#8338ec;
+    font-weight:600;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<h1>Śmieszne koty 😹</h1>
+
+<div class="grid">
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+<img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif">
+<img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif">
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+<img src="https://placekitten.com/401/401">
+<img src="https://placekitten.com/402/401">
+<img src="https://placekitten.com/403/401">
+<img src="https://placekitten.com/404/401">
+</div>
+
+<br>
+<a href="index.html">⬅ Wróć na stronę główną</a>
+</body>
+</html>
