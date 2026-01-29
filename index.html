@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Administrator</title>
+<meta charset="UTF-8">
+<title>Kicikici 🐱</title>
 
-    <!-- słodka czcionka -->
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
 
-    <style>
-        body {
-            font-family: 'Comic Neue', cursive;
-            background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
-            text-align: center;
-            padding: 30px;
-        }
+body{
+    margin:0;
+    font-family:'Quicksand',sans-serif;
+    background:linear-gradient(180deg,#fff0f6,#ffffff);
+}
 
-        h1 {
-            font-size: 48px;
-            color: #ff66a3;
-        }
+header{
+    background:#ffafcc;
+    padding:24px;
+    text-align:center;
+}
 
-        img {
-            max-width: 350px;
-            border-radius: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            margin: 20px;
-        }
+header h1{
+    font-family:'Pacifico',cursive;
+    font-size:56px;
+    margin:0;
+}
 
-        p {
-            font-size: 22px;
-        }
+.jump span{
+    display:inline-block;
+    animation:jump 2s infinite;
+}
+.jump span:nth-child(odd){
+    animation-delay:.15s;
+}
 
-        a {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            color: white;
-            background: #ff66a3;
-            padding: 12px 25px;
-            border-radius: 20px;
-        }
+@keyframes jump{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(-12px)}
+}
 
-        a:hover {
-            background: #ff3385;
-        }
-    </style>
+nav{
+    background:#333;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 14px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#ffd6e0;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:24px;
+    text-align:center;
+}
+
+.kitty-walk{
+    position:fixed;
+    bottom:40px;
+    left:-120px;
+    width:100px;
+    animation:walk 18s linear infinite;
+}
+
+@keyframes walk{
+    0%{left:-120px}
+    100%{left:110%}
+}
+
+footer{
+    position:fixed;
+    right:16px;
+    bottom:12px;
+    background:#333;
+    color:white;
+    padding:10px 14px;
+    border-radius:14px;
+    font-family:'Pacifico',cursive;
+    opacity:.85;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>🐾 Administrator strony 🐾</h1>
+<header>
+<h1 class="jump">
+<span>K</span><span>i</span><span>c</span><span>i</span><span>k</span><span>i</span><span>c</span><span>i</span> 🐾
+</h1>
+<p>Najbardziej słodka strona o kotach</p>
+</header>
 
-    <img src="img/administrator.jpg" alt="Administrator strony">
+<nav>
+<a href="index.html">Strona główna</a>
+<a href="porady.html">Porady</a>
+<a href="ciekawostki.html">Ciekawostki</a>
+<a href="galeria.html">Śmieszne koty</a>
+</nav>
 
-    <p>
-        Główny administrator serwisu.<br>
-        Odpowiada za bezpieczeństwo, porządek i dobrą atmosferę 😎🐕
-    </p>
+<div class="container">
+<p>Koty rządzą internetem. Przewijaj i ciesz się kicikici 😺</p>
+<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+</div>
 
-    <a href="index.html">⬅ Powrót na stronę główną</a>
+<img class="kitty-walk" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+
+<footer>Izabella Szenknecht</footer>
 
 </body>
 </html>
