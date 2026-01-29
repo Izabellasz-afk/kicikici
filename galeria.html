@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>Kicikici – Galeria</title>
+  <meta charset="UTF-8">
+  <title>Kicikici – Galeria</title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+  <style>
+    body {
+      font-family: "Quicksand", sans-serif;
+      background: #fff0f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-body{
-    font-family:'Quicksand',sans-serif;
-    background:white;
-    margin:0;
-    padding:24px;
-}
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ff69b4;
+    }
 
-h1{
-    color:#8338ec;
-    margin-bottom:20px;
-}
+    h1 {
+      margin-top: 20px;
+    }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:16px;
-}
+    .galeria img {
+      width: 280px;
+      border-radius: 20px;
+      margin: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
 
-img{
-    width:100%;
-    border-radius:18px;
-    transition:0.3s;
-}
+<body>
 
-img:hover{
-    transform:scale(1.08) rotate(1deg);
-}
+<nav>
+  <a href="index.html">Strona główna</a>
+  <a href="porady.html">Porady</a>
+  <a href="ciekawostki.html">Ciekawostki</a>
+  <a href="galeria.html">Śmieszne koty</a>
+  <a href="administrator.html">Administrator</a>
+</nav>
 
-a{
-    color:#8338ec;
-    font-weight:600;
-    text-decor
+<h1>Śmieszne koty 😺</h1>
+
+<div class="galeria">
+  <img src="img/kot1.jpg" alt="Kot 1">
+  <img src="img/kot2.jpg" alt="Kot 2">
+</div>
+
+</body>
+</html>
+
