@@ -2,67 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Administrator – Kicikici</title>
+    <title>Administrator</title>
+
+    <!-- słodka czcionka -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f6f6f6;
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
             text-align: center;
+            padding: 30px;
         }
 
-        header {
-            background: pink;
-            padding: 20px;
-        }
-
-        nav {
-            background: #222;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 40px;
+        h1 {
+            font-size: 48px;
+            color: #ff66a3;
         }
 
         img {
-            max-width: 300px;
-            border-radius: 15px;
-            margin-top: 20px;
+            max-width: 350px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            margin: 20px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: white;
+            background: #ff66a3;
+            padding: 12px 25px;
+            border-radius: 20px;
+        }
+
+        a:hover {
+            background: #ff3385;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Kicikici 🐾</h1>
-    <p>Panel administratora</p>
-</header>
+    <h1>🐾 Administrator strony 🐾</h1>
 
-<nav>
-    <a href="index.html">Strona główna</a>
-    <a href="porady.html">Porady</a>
-    <a href="ciekawostki.html">Ciekawostki</a>
-</nav>
+    <img src="img/administrator.jpg" alt="Administrator strony">
 
-<div class="content">
-    <h2>Administrator strony</h2>
+    <p>
+        Główny administrator serwisu.<br>
+        Odpowiada za bezpieczeństwo, porządek i dobrą atmosferę 😎🐕
+    </p>
 
-    <img src="img/administrator.jpg" alt="Administrator">
-
-    <p>To jest administrator strony Kicikici.</p>
-</div>
+    <a href="index.html">⬅ Powrót na stronę główną</a>
 
 </body>
 </html>
